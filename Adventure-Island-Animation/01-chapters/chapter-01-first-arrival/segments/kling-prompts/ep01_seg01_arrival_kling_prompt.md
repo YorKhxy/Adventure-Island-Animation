@@ -2,9 +2,9 @@
 
 ## 可灵生成模式
 
-图生视频 + 主体参考 + 可灵视频3.0智能分镜。
+图生视频 + 主体参考 + 可灵视频3.0智能分镜 + 原生音画同步字幕。
 
-不建议本段直接开启原生音画同步生成字幕文字。画面先生成干净视频，配音和字幕后期添加；如果要测试音画同步，可使用下方“音画同步脚本”。
+本段需要可灵在视频里生成与配音同步的底部中文字幕。关键图本身保持无字；字幕只在可灵视频生成阶段出现。
 
 ## 推荐设置
 
@@ -12,6 +12,7 @@
 - 时长：15秒
 - 画幅：横版 16:9
 - 生成方式：首帧图生视频
+- 字幕策略：开启原生字幕/音画同步字幕，按下方“字幕与音画同步脚本”逐句显示
 - 首帧上传优先使用：`segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`
 - 首帧源图：`segments/keyframes/ep01_seg01_arrival_keyframe.png`
 - 主体参考：建议上传六个角色 final 图，优先锁定浩浩、沐沐；后景四人只需保持身份和服装色彩，不要求近景脸部细节。
@@ -19,18 +20,34 @@
 
 ## 输入参考
 
-- 首帧上传图：`segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`
-- 首帧源图：`segments/keyframes/ep01_seg01_arrival_keyframe.png`
-- 浩浩主体参考：`../../02-assets/characters/haohao/character-haohao-final.png`
-- 沐沐主体参考：`../../02-assets/characters/mumu/character-mumu-final.png`
-- 钰钰主体参考：`../../02-assets/characters/yuyu/character-yuyu-final.png`
-- 卉卉主体参考：`../../02-assets/characters/huihui/character-huihui-final.png`
-- 骆骆主体参考：`../../02-assets/characters/luoluo/character-luoluo-final.png`
-- 方方主体参考：`../../02-assets/characters/fangfang/character-fangfang-final.png`
+- 首帧上传图：`01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`
+- 首帧源图：`01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe.png`
+- 浩浩主体参考：`02-assets/characters/haohao/character-haohao-final.png`
+- 沐沐主体参考：`02-assets/characters/mumu/character-mumu-final.png`
+- 钰钰主体参考：`02-assets/characters/yuyu/character-yuyu-final.png`
+- 卉卉主体参考：`02-assets/characters/huihui/character-huihui-final.png`
+- 骆骆主体参考：`02-assets/characters/luoluo/character-luoluo-final.png`
+- 方方主体参考：`02-assets/characters/fangfang/character-fangfang-final.png`
+
+以上路径按项目根目录 `G:\1\Adventure-Island-Animation` 选文件。可灵不会读取本地路径；路径只用于你在上传窗口里找到文件。上传后在提示词里用“首帧图、浩浩参考图、沐沐参考图、钰钰参考图、卉卉参考图、骆骆参考图、方方参考图”这些名字引用素材。
+
+## 可灵素材引用映射
+
+- 首帧图 = `01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`
+- 主体参考1 / 浩浩参考图 = `02-assets/characters/haohao/character-haohao-final.png`
+- 主体参考2 / 沐沐参考图 = `02-assets/characters/mumu/character-mumu-final.png`
+- 主体参考3 / 钰钰参考图 = `02-assets/characters/yuyu/character-yuyu-final.png`
+- 主体参考4 / 卉卉参考图 = `02-assets/characters/huihui/character-huihui-final.png`
+- 主体参考5 / 骆骆参考图 = `02-assets/characters/luoluo/character-luoluo-final.png`
+- 主体参考6 / 方方参考图 = `02-assets/characters/fangfang/character-fangfang-final.png`
+
+如果可灵界面自动生成“参考图1/参考图2”之类的标签，就按上面的顺序对应；如果界面允许给素材命名，就直接命名为“浩浩参考图、沐沐参考图”等。
 
 ## 中文正向提示词
 
-柔亮童话国漫风儿童冒险动画，暖奶油清晨光效，清澈空气感，草地露珠闪光，远处藤蔓石门柔和发光，画面安全、温柔、神秘但不恐怖。使用首帧图生视频，保持首帧构图、角色位置、服装颜色、年龄比例和发光岛门环境一致。允许可灵视频3.0智能分镜，但必须按15秒时间轴推进。
+柔亮童话国漫风儿童冒险动画，暖奶油清晨光效，清澈空气感，草地露珠闪光，远处藤蔓石门柔和发光，画面安全、温柔、神秘但不恐怖。使用首帧图生视频，保持首帧构图、角色位置、服装颜色、年龄比例和发光岛门环境一致。允许可灵视频3.0智能分镜，但必须按15秒时间轴推进。开启底部中文字幕，字幕必须与配音台词同步，使用清晰简体中文白字，薄黑描边，位于底部安全区，不遮挡角色脸和关键动作。
+
+素材引用：使用“首帧图”作为第一帧和构图锚点；使用“浩浩参考图、沐沐参考图、钰钰参考图、卉卉参考图、骆骆参考图、方方参考图”作为六个儿童角色的主体参考。浩浩和沐沐是前景核心主体，优先保持脸、发型、服装、身高比例和表情；钰钰、卉卉、骆骆、方方是后景主体参考，重点保持服装颜色、发型轮廓和身份，不要求近景级脸部细节。
 
 0-3秒：镜头从前景带露水的草叶和柔和天空开始，轻微虚焦后慢慢清晰。浩浩在草地上刚醒来，缓慢睁眼并坐起，表情从迷茫变成警觉。镜头运动稳定、轻柔，不要剧烈晃动。
 
@@ -44,15 +61,17 @@
 
 镜头语言：清晨自然光，低机位草地前景，先轻推近再慢慢后拉，稳定电影感，柔和景深，适合15秒儿童动漫短剧开场。不要快速剪切，不要突然变焦，不要强烈震动。
 
-环境动态：草叶轻轻摆动，露珠闪烁，漂浮光点缓慢移动，远处岛门光芒柔和扩散，水纹轻轻荡开。不要出现章鱼怪，不要出现攻击魔法。
+环境动态：草叶轻轻摆动，露珠闪烁，漂浮光点缓慢移动，远处岛门光芒柔和扩散，水纹轻轻荡开。不要出现章鱼怪，不要出现攻击魔法。字幕只显示下方指定台词，不要生成额外文字。
 
 ## 中文负面提示词
 
-不要文字，不要字幕，不要logo，不要水印，不要伪文字，不要门牌字，不要画面内中文或英文；不要章鱼怪，不要怪物，不要恐怖气氛，不要红眼，不要武器，不要战斗姿势，不要魔法攻击特效；不要成人比例，不要角色变脸，不要服装大幅改变，不要把后景角色画成陌生人；不要多人动作同步，不要钰钰和骆骆同姿势，不要所有人站成一排，不要海报摆拍；不要镜头剧烈晃动，不要快速乱切，不要突然大幅变焦，不要过度写实，不要黑暗恐怖光影。
+不要logo，不要水印，不要伪文字，不要门牌字，不要画面内随机中文或英文；除了指定底部中文字幕之外，不要生成任何额外文字；不要字幕乱码，不要错别字，不要中英混杂，不要字幕遮挡角色脸；不要章鱼怪，不要怪物，不要恐怖气氛，不要红眼，不要武器，不要战斗姿势，不要魔法攻击特效；不要成人比例，不要角色变脸，不要服装大幅改变，不要把后景角色画成陌生人；不要多人动作同步，不要钰钰和骆骆同姿势，不要所有人站成一排，不要海报摆拍；不要镜头剧烈晃动，不要快速乱切，不要突然大幅变焦，不要过度写实，不要黑暗恐怖光影。
 
-## 音画同步脚本
+## 字幕与音画同步脚本
 
-如果使用可灵原生音画同步，按以下角色映射，画面中仍然不要生成字幕文字。
+开启可灵原生音画同步和底部中文字幕。字幕必须逐句显示以下中文，不能改写，不能加字，不能漏字。
+
+不需要使用特殊魔法符号。最稳写法是“时间段 + 说话人 + 语气 + 中文引号内台词”。如果可灵界面有独立的音画同步/对白输入框，把下面四行原样粘贴进去；如果只有一个提示词框，就把下面四行连同“只有沐沐和浩浩开口”要求一起放进正向提示词末尾。
 
 - 00:00.5-00:05.0，旁白，温和、带一点神秘感：浩浩一醒来，就发现自己来到了陌生的冒险岛。
 - 00:05.2-00:08.0，沐沐，轻声、害怕但不哭：哥哥，我有点害怕。
@@ -61,18 +80,21 @@
 
 多人同框口型要求：只有沐沐和浩浩开口时需要口型；钰钰、卉卉、骆骆、方方只做动作反应，不要让他们说话。
 
+字幕样式要求：简体中文，白色字幕，薄黑描边，底部居中，单行优先，最多两行，位于字幕安全区。字幕内容只显示对应台词，不显示说话人标签，不显示时间码。
+
 ## 生成风险
 
 - 六个孩子同屏容易角色漂移，主体参考优先锁浩浩和沐沐，后景四人只要求身份和动作准确。
 - 可灵可能把钰钰和骆骆动作做相似，必须保留“钰钰站立指向大门，骆骆半蹲观察水纹”的互斥动作。
-- 可灵可能在发光岛门上生成伪文字，负面提示词必须强调不要任何画面文字。
+- 可灵可能在发光岛门上生成伪文字，负面提示词必须强调除了底部指定中文字幕外不要任何画面文字。
+- 原生字幕可能错字或乱码，生成后必须核对四句字幕是否与脚本一致。
 - 智能分镜可能自由扩写怪物或魔法觉醒，本段禁止章鱼怪和攻击魔法，只做醒来、聚集、看见岛门。
 - 音画同步如果开启，可能让后景角色误开口；必须指定只有沐沐和浩浩说话。
 
 ## 后期备注
 
-- 建议先生成无字幕干净视频，再用 `segments/subtitles/ep01_seg01_arrival.srt` 后期加字幕。
-- 配音按 `segments/audio/ep01_seg01_arrival_voice_script.txt` 制作。
+- 本段按用户要求测试可灵原生同步字幕；如字幕乱码或错字，再退回 `segments/subtitles/ep01_seg01_arrival.srt` 后期压字幕。
+- 配音按 `segments/audio/ep01_seg01_arrival_voice_script.txt` 制作，并与本提示词中的字幕时间对齐。
 - 输出视频建议命名为 `segments/videos-raw/ep01_seg01_arrival_kling.mp4`。
 - 本段结尾保留0.5秒岛门光扩散，衔接 SEG02 魔法觉醒。
 
@@ -82,29 +104,30 @@
 
 1. 选择可灵视频3.0。
 2. 选择图生视频，时长 15 秒，横版 16:9。
-3. 首帧上传：优先上传 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`。如果可灵接受 PNG，也可以用 `segments/keyframes/ep01_seg01_arrival_keyframe.png`。
-4. 如界面支持主体参考，上传六个角色 final 图；主体参考权重优先给浩浩和沐沐，后景四人只锁服装颜色和角色身份。
+3. 首帧上传：从 `G:\1\Adventure-Island-Animation` 里选择 `01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`。如果可灵接受 PNG，也可以用 `01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe.png`。
+4. 如界面支持主体参考，按顺序上传六个角色 final 图：浩浩、沐沐、钰钰、卉卉、骆骆、方方。主体参考权重优先给浩浩和沐沐，后景四人只锁服装颜色和角色身份。
 5. 正向提示词复制“中文正向提示词”整段。
 6. 负面提示词复制“中文负面提示词”整段。
-7. 先关闭画面字幕/文字生成；字幕和配音后期处理。
+7. 开启原生音画同步/字幕能力，让可灵按“字幕与音画同步脚本”生成底部中文字幕；如果界面要求单独输入对白，就把四句台词按时间段粘进去。
 8. 生成后保存为：`segments/videos-raw/ep01_seg01_arrival_kling.mp4`。
 
 ### 上传资产清单
 
-- 必需首帧上传图：`segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`
-- 备用首帧源图：`segments/keyframes/ep01_seg01_arrival_keyframe.png`
-- 推荐主体参考：`../../02-assets/characters/haohao/character-haohao-final.png`
-- 推荐主体参考：`../../02-assets/characters/mumu/character-mumu-final.png`
-- 可选主体参考：`../../02-assets/characters/yuyu/character-yuyu-final.png`
-- 可选主体参考：`../../02-assets/characters/huihui/character-huihui-final.png`
-- 可选主体参考：`../../02-assets/characters/luoluo/character-luoluo-final.png`
-- 可选主体参考：`../../02-assets/characters/fangfang/character-fangfang-final.png`
+- 必需首帧上传图：`01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`
+- 备用首帧源图：`01-chapters/chapter-01-first-arrival/segments/keyframes/ep01_seg01_arrival_keyframe.png`
+- 推荐主体参考：`02-assets/characters/haohao/character-haohao-final.png`
+- 推荐主体参考：`02-assets/characters/mumu/character-mumu-final.png`
+- 可选主体参考：`02-assets/characters/yuyu/character-yuyu-final.png`
+- 可选主体参考：`02-assets/characters/huihui/character-huihui-final.png`
+- 可选主体参考：`02-assets/characters/luoluo/character-luoluo-final.png`
+- 可选主体参考：`02-assets/characters/fangfang/character-fangfang-final.png`
 
 ### 通过标准
 
 - 浩浩和沐沐身份稳定，沐沐抓衣角，浩浩保护妹妹。
 - 钰钰站立侧身指向大门，骆骆半蹲观察水纹，两人动作不能相似。
-- 不出现章鱼怪、战斗魔法、画面文字、伪字幕、logo 或水印。
+- 不出现章鱼怪、战斗魔法、随机画面文字、伪字幕、logo 或水印；只允许指定底部中文字幕。
+- 四句中文字幕内容、顺序和配音时间基本一致。
 - 镜头从醒来推进到后拉看见岛门，15 秒内只讲“醒来与发现入口”。
 - 结尾有岛门光扩散，能接 SEG02。
 
@@ -112,5 +135,6 @@
 
 - 任一角色明显变脸或年龄变大。
 - 钰钰和骆骆再次同姿态站立或同步抬手。
-- 可灵自由扩写出章鱼怪、战斗、魔法觉醒或文字。
+- 可灵自由扩写出章鱼怪、战斗、魔法觉醒或随机文字。
+- 中文字幕错字、乱码、漏句、遮挡角色脸或不同步。
 - 镜头乱切、强烈晃动、快速变焦导致儿童短剧开场不稳定。

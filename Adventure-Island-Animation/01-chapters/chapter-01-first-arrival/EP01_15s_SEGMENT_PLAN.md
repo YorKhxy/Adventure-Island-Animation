@@ -10,11 +10,11 @@
 
 - 总时长：90 秒。
 - 分段：6 段，每段 15 秒。
-- 生成方式：每段 1 张关键图 + 1 条可灵AI中文视频提示词 + 1 条 15 秒视频。
+- 生成方式：每段 1 张关键图 + 1 条可灵AI中文视频提示词 + 1 条 15 秒视频；可灵单次只生成 15 秒，所以严禁跨段塞剧情。
 - 后期合成：按 `seg01` 到 `seg06` 顺序拼接，段间使用 0.3-0.5 秒软切或光效/墨云/泡泡转场。
 - 每段只承载 1 个主剧情动作，不要把多个转折塞进同一段。
 - 所有字幕、配音和视频片段必须按段号命名，避免素材混乱。
-- 可灵画面中不要生成中文文字，所有文字、门牌、字幕后期添加。
+- 关键图中不要生成文字；可灵视频如开启字幕，只允许生成与配音同步的底部中文字幕，不允许门牌字、随机伪文字、水印或额外说明文字。
 
 ## Master Asset References
 
@@ -106,7 +106,7 @@ final/ep01_full_90s.mp4
 - 旁白/台词：
   - 旁白：冒险岛的测试开始了。金、木、水、火、土、光，六种魔法同时亮起。
 - 字幕：六种魔法，在孩子们身边亮了起来。
-- 可灵AI中文提示词：待按 `kling-prompt-builder` 生成最终版 `segments/kling-prompts/ep01_seg02_powers_awaken_kling_prompt.md`。
+- 可灵AI中文提示词：READY，最终版 `segments/kling-prompts/ep01_seg02_powers_awaken_kling_prompt.md`。
 - 生成风险：六人同屏难度高；必要时拆成 3 个双人镜头拼接，不强求单镜完成。
 - 转场到下一段：地面水纹突然震动，魔法光被墨色阴影盖住。
 
@@ -121,7 +121,7 @@ final/ep01_full_90s.mp4
   - 方方：有怪物！
   - 浩浩：大家后退！
 - 字幕：一只章鱼怪突然挡在了他们面前。
-- 可灵AI中文提示词：待按 `kling-prompt-builder` 生成最终版 `segments/kling-prompts/ep01_seg03_octopus_appears_kling_prompt.md`。
+- 可灵AI中文提示词：READY，最终版 `segments/kling-prompts/ep01_seg03_octopus_appears_kling_prompt.md`。
 - 生成风险：章鱼不能变恐怖写实；必须保持圆胖中性，不要女性向，也不要回到萌宠脸。
 - 转场到下一段：墨云铺满画面，用墨色擦屏转场。
 
@@ -135,7 +135,7 @@ final/ep01_full_90s.mp4
 - 旁白/台词：
   - 旁白：大家没有乱跑，而是一起配合起来。
 - 字幕：六种魔法配合起来，挡住了章鱼怪的冲击。
-- 可灵AI中文提示词：待按 `kling-prompt-builder` 生成最终版 `segments/kling-prompts/ep01_seg04_teamwork_defense_kling_prompt.md`。
+- 可灵AI中文提示词：READY，最终版 `segments/kling-prompts/ep01_seg04_teamwork_defense_kling_prompt.md`。
 - 生成风险：动作太多，建议分成 3 个 5 秒子镜头后剪进一个 15 秒段；钰钰不能出盾，火不能爆炸，水不能变水刃。
 - 转场到下一段：土墙落下，镜头推近章鱼怪，听到肚子叫。
 
@@ -150,7 +150,7 @@ final/ep01_full_90s.mp4
   - 沐沐：等等，它好像不是想伤害我们。
   - 沐沐：它只是太饿了。
 - 字幕：沐沐发现，章鱼怪其实只是又饿又害怕。
-- 可灵AI中文提示词：待按 `kling-prompt-builder` 生成最终版 `segments/kling-prompts/ep01_seg05_truth_revealed_kling_prompt.md`。
+- 可灵AI中文提示词：READY，最终版 `segments/kling-prompts/ep01_seg05_truth_revealed_kling_prompt.md`。
 - 生成风险：不要让章鱼直接变成完全萌版，保留过渡状态；沐沐治疗光不能像攻击光束。
 - 转场到下一段：暖光包住画面，切到感化后章鱼。
 
@@ -165,7 +165,7 @@ final/ep01_full_90s.mp4
   - 旁白：第一场测试，浩浩他们赢了。但他们学到的，不只是战斗。
   - 冒险岛声音：第一关，通过！
 - 字幕：第一关通过！大门后，是更深的冒险岛森林。
-- 可灵AI中文提示词：待按 `kling-prompt-builder` 生成最终版 `segments/kling-prompts/ep01_seg06_reconciliation_kling_prompt.md`。
+- 可灵AI中文提示词：READY，最终版 `segments/kling-prompts/ep01_seg06_reconciliation_kling_prompt.md`。
 - 生成风险：感化后章鱼不能加睫毛、腮红、花饰或女性化表情；“第一关通过”文字后期加，不要生成在画面里。
 - 结尾钩子：镜头推进发光森林，保留 1 秒空镜给第二章衔接。
 
@@ -204,10 +204,10 @@ final/ep01_full_90s.mp4
 - SEG01 关键图已通过：`segments/keyframes/ep01_seg01_arrival_keyframe.png`；可灵上传图已生成：`segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`。
 - SEG02-SEG06 关键图尚未生成。
 - 6 条可灵视频尚未生成。
-- 配音音频尚未生成。
-- SRT 字幕文件尚未生成。
+- SEG02-SEG06 配音脚本已补齐，实际音频尚未生成。
+- SEG02-SEG06 SRT 字幕已补齐。
 - 第一集合成脚本尚未生成。
 
 ## Recommended Next Step
 
-先用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg` 和 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md` 生成 SEG01 可灵视频。通过后再继续 SEG02-SEG06，别一次性全跑，废片成本太高。
+先用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg` 和 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md` 生成 SEG01 可灵视频。SEG01 通过后，再逐段生成 SEG02-SEG06 的关键图和可灵视频；不要一次性全跑，废片成本太高。

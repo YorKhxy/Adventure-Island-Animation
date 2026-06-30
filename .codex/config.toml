@@ -1,0 +1,93 @@
+# Codex CLI 配置 —— 产品经理技能包 4.0
+#
+# 该文件需要放在项目根目录的 .codex/config.toml。Codex 启动时自动加载。
+#
+# Hook 行为对齐 Claude Code 版本的 settings.json：
+#   - 事件名一致（SessionStart / UserPromptSubmit / PreToolUse / PostToolUse / Stop）
+#   - matcher 只支持正则；Claude Code 的 `if: "Bash(git commit*)"` 已下沉到脚本里（脚本读 stdin JSON 自己过滤）
+#   - PostToolUse 监听 `apply_patch`（Codex 对应 Claude Code 的 Edit|Write）
+#
+# 启用 hook：
+
+[features]
+codex_hooks = true
+
+
+# ─────────────────────────────────────────────────────────────
+# SessionStart —— 启动时扫一眼 feedback 索引
+# ─────────────────────────────────────────────────────────────
+[[hooks.SessionStart]]
+matcher = "startup|resume"
+
+[[hooks.SessionStart.hooks]]
+type = "command"
+command = "bash .codex/hooks/check-evolution.sh"
+timeout = 10
+statusMessage = "检查 feedback 进化建议"
+
+
+# ─────────────────────────────────────────────────────────────
+# UserPromptSubmit —— 检测修正/反馈关键词
+# ─────────────────────────────────────────────────────────────
+[[hooks.UserPromptSubmit]]
+matcher = ".*"
+
+[[hooks.UserPromptSubmit.hooks]]
+type = "command"
+command = "bash .codex/hooks/detect-feedback-signal.sh"
+timeout = 5
+statusMessage = "检测反馈信号"
+
+
+# ─────────────────────────────────────────────────────────────
+# PreToolUse (Bash) —— git commit 前先编译检查
+# 命令过滤在脚本里做（解析 stdin 的 tool_input.command）
+# ─────────────────────────────────────────────────────────────
+[[hooks.PreToolUse]]
+matcher = "^Bash$"
+
+[[hooks.PreToolUse.hooks]]
+type = "command"
+command = "bash .codex/hooks/pre-commit-check.sh"
+timeout = 30
+statusMessage = "commit 前编译检查"
+
+
+# ─────────────────────────────────────────────────────────────
+# PostToolUse (Bash) —— git commit 成功后自动 push
+# 命令过滤 + 退出码判断都在脚本里做
+# ─────────────────────────────────────────────────────────────
+[[hooks.PostToolUse]]
+matcher = "^Bash$"
+
+[[hooks.PostToolUse.hooks]]
+type = "command"
+command = "bash .codex/hooks/auto-push.sh"
+timeout = 15
+statusMessage = "commit 后自动 push"
+
+
+# ─────────────────────────────────────────────────────────────
+# PostToolUse (apply_patch) —— 改完代码标记需要 review
+# ─────────────────────────────────────────────────────────────
+[[hooks.PostToolUse]]
+matcher = "^apply_patch$"
+
+[[hooks.PostToolUse.hooks]]
+type = "command"
+command = "bash .codex/hooks/mark-review-needed.sh"
+timeout = 3
+statusMessage = "标记需要 review"
+
+
+# ─────────────────────────────────────────────────────────────
+# Stop —— 有未 review 的修改就拦下来
+# ─────────────────────────────────────────────────────────────
+[[hooks.Stop]]
+matcher = ".*"
+
+[[hooks.Stop.hooks]]
+type = "command"
+command = "bash .codex/hooks/stop-gate.sh"
+timeout = 5
+statusMessage = "结束前 review 闸门"
