@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character expression sheet for production
+Primary request: Create an 8-panel expression sheet for Luoluo based strictly on input image 1. Match the clean warm expression-sheet layout and soft bright fairy-tale Chinese animation style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Luoluo's final main reference and must control identity, face, hair, outfit, colors, and water-magic character. Image 2 is the Mumu expression sheet and must control layout style: warm cream background, close-up/bust panels, clean spacing, no text.
+Subject: Luoluo, 7-year-old boy with water magic and small gentle ice accents, calm clever twin older brother, slim body language, dark short boy haircut, clear-water-blue short jacket, raised collar, wrist guards, simple belt.
+Composition/framing: horizontal sheet with exactly eight bust or half-body expression panels in a clean 4 by 2 grid. No labels, no text. Expressions: calm smile, observant thinking, mild worry, surprised, quiet determination, rare laugh, focused guiding water, protective older-brother concern.
+Style/medium: polished soft bright fairy-tale Chinese animation, warm cream background, soft linework, consistent with Mumu Candidate A.
+Constraints: keep same face identity, short hair, boy age, outfit collar, wrist guards, belt, and calm temperament across all panels. Eyes and eyebrows must read boyish and reserved, not cute-girlish. Tiny water/ice accents are allowed in one or two panels only.
+Avoid: changing hairstyle, hair clip, flower clip, bow, long scarf, adult face, girl-like expression styling, feminine eyelashes, duplicate identical expressions, text labels, watermark, logo, weapons, AI hand or eye errors.

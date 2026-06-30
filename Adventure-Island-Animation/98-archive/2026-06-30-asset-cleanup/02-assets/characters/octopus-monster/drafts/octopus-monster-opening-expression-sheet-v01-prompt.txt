@@ -1,0 +1,23 @@
+Use case: illustration-story
+Asset type: creature expression sheet for animation production
+
+Primary request:
+Create an 8-panel expression sheet for the octopus monster opening form using Image 1 as the locked final reference.
+
+Input image:
+Image 1 is the locked opening-form octopus monster final. Preserve the exact identity: fierce gender-neutral tide-pool guardian, rounded heavy body, smaller narrowed eyes, low brow, downturned mouth, purple-blue mottled skin, thick tentacles, black ink-cloud ability.
+
+Required consistency:
+This is the opening-scene form, before being softened. It can show emotion, but must not become adorable, feminine, or pet-like. Keep eyes smaller and harder than the earlier cute drafts. No blush, no long eyelashes, no big teary sparkle, no mascot smile.
+
+Expressions:
+Eight clear head-and-upper-body panels: suspicious glare, angry warning, stubborn blocking, startled defensive reaction, confused hesitation, ink puff irritation, hurt pride, reluctant softening while still grumpy. The last panel may hint at future sympathy but must not become full cute form.
+
+Style and layout:
+Readable 8-panel production sheet, warm cream background, soft luminous fairy-tale Chinese animation style, clean painterly lighting. Use small ink puffs, bubbles, and water droplets as accents only.
+
+Avoid:
+No cute plush toy expression, no big teary eyes, no blush, no eyelashes, no bows, no flowers, no jewelry, no feminine styling, no sharp teeth, no gore, no realistic slimy horror, no red glowing eyes, no demon face, no children, no text, no labels, no logo, no watermark.
+
+Output requirement:
+One polished 1024x1536 portrait expression sheet. All panels must feel like the same opening-form guardian monster.

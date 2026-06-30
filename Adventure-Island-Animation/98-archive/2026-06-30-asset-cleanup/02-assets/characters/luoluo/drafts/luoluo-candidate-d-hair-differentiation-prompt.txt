@@ -1,0 +1,22 @@
+Use case: style-transfer
+Asset type: character final reference revision for an animation character bible
+
+Primary request:
+Edit Image 1 only: keep Luoluo's approved boyish water/ice character design, outfit, pose, proportions, color palette, warm cream background, water bubble aura, water magic orb, small safe ice accents, and gentle Chinese animation fairy-tale style. Change only the hairstyle so he is clearly distinct from Haohao and Fangfang.
+
+Input images:
+Image 1 is the edit target: approved Luoluo boy character reference.
+Image 2 is Haohao reference: avoid his older 10-year-old feeling and avoid his taller, sharper, upward spiky heroic hair silhouette.
+Image 3 is Fangfang reference: keep Luoluo in the same 7-year-old twin age range as Fangfang, but avoid Fangfang's round fire-kid messy flame-like fluffy hair silhouette.
+
+Required hairstyle revision:
+Luoluo is a 7-year-old boy and Fangfang's twin brother, so he must look the same age range as Fangfang and clearly younger than 10-year-old Haohao. Give Luoluo a low, clean, water-inspired short haircut: soft side-parted dark hair, slightly damp-looking curved locks, smooth wave-shaped bangs sweeping sideways across the forehead, neat rounded sides, one small subtle blue highlight along the bangs, lower head silhouette than Haohao, calmer and tidier than Fangfang. The outline should read like a small flowing water wave, not fire, not heroic spikes.
+
+Character invariants:
+Keep him male, childlike, 7 years old, slim but still child-proportioned, calm and smart. Keep the short blue water jacket, white inner shirt, wrist guards, belt gem, water bottle, blue cropped pants, boots, water magic orb, soft bubble shield, warm cream background, and gentle luminous mumu-A style. Keep the water main element and only tiny non-aggressive ice/snowflake accents.
+
+Avoid:
+Do not add hair clips, water-drop hair ornaments, bows, flowers, long scarf, shawl, cape ribbons, feminine eyelashes, girl-like face, long hair, ponytail, topknot, sharp anime hero spikes, Haohao-like mature hair, Fangfang-like flame hair, aggressive ice spikes, weapons, shield wall, scary magic, text, logo, watermark.
+
+Output requirement:
+One polished full-body character reference image, portrait 1024x1536. Only the hairstyle should noticeably change; all other approved design decisions should remain stable.

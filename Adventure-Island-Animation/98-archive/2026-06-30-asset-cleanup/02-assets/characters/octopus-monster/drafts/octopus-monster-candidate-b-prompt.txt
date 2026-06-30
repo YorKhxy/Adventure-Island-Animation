@@ -1,0 +1,35 @@
+Use case: illustration-story
+Asset type: friendly antagonist character concept reference for children's animation
+
+Primary request:
+Create a second full-body reference image for the octopus monster in the same soft luminous fairy-tale Chinese animation style as Image 1. Keep it child-safe and pitiful, but make it read more clearly as a small guardian creature blocking a path.
+
+Input image:
+Image 1 is the style reference: warm cream background, rounded proportions, clean glowing aura, soft painterly Chinese animation look, bright gentle lighting, not realistic and not dark.
+
+Subject:
+A round, chubby baby octopus monster with a big soft head, squat body, six to eight short rounded tentacles, soft dot suction cups, large watery eyes, tiny worried eyebrows, and a small pouty mouth. It is standing/floating in front of a tide-pool cave entrance or shallow reef gate, spreading its short tentacles wide in a protective "no passing" pose. It should look scared and stubborn, not evil.
+
+Threat level:
+Lightly threatening through silhouette and staging only: larger rounded body, tentacles spread like a soft barrier, harmless ink puffs, water bubbles, little splash swirls, and a cautious frown. No horror. The audience should feel: "It might block the kids, but it needs help."
+
+Story role:
+Misunderstood tide-pool guardian, lonely and defensive. It can make harmless ink clouds, bubbles, soft water swirls, and slippery puddles. It is not a boss monster and not a villain.
+
+Style and mood:
+Soft luminous fairy-tale Chinese animation, matching the established Mumu-A character style. Warm cream background, pastel sea colors, round cute shapes, clean highlights, gentle bubble glow, expressive eyes, child-safe design.
+
+Color palette:
+Soft lavender purple body, coral pink underside, pale aqua water, creamy highlights, pearly glow, tiny seaweed green accent, small shell or bandage stuck to its head. Avoid dark horror colors.
+
+Composition:
+Portrait full-body character reference, centered. The octopus is low and round, with tentacles spread horizontally to create a soft barrier shape. Add a shallow pool ripple under it and small harmless dark ink puffs on both sides. Keep background simple and readable.
+
+Design anchors:
+Round head, tiny worried eyebrows, big glossy teary eyes, pouty mouth, blush, short thick tentacles, soft dot suction cups, one shell/bandage/seaweed tuft on head, slightly bigger than a child but still cute and manageable.
+
+Avoid:
+No realistic octopus anatomy, no slimy horror, no sharp teeth, no claws, no spikes, no gore, no skulls, no angry demon face, no red glowing eyes, no dark underwater horror lighting, no long creepy tentacles, no adult monster body, no weapon, no attacking children, no constricting pose, no disgusting texture, no text, no logo, no watermark.
+
+Output requirement:
+One polished character concept reference image, portrait 1024x1536. It must be round, pitiful, child-safe, and slightly more guardian-like than Candidate A.

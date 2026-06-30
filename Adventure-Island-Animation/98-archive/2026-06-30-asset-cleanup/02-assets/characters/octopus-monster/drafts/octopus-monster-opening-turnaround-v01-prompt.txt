@@ -1,0 +1,23 @@
+Use case: illustration-story
+Asset type: creature turnaround sheet for animation production
+
+Primary request:
+Create a clean three-view turnaround sheet for the octopus monster opening form using Image 1 as the locked final reference. Show front view, side view, and back view of the same creature on one production sheet.
+
+Input image:
+Image 1 is the locked opening-form octopus monster final. Preserve the exact identity: fierce gender-neutral tide-pool guardian, round heavy body, smaller narrowed eyes, low brow, downturned frown, dark purple-blue mottled skin, thick short tentacles, strong suction cups, black ink clouds, cave-guardian feeling.
+
+Required consistency:
+This is the opening-scene form, before being softened. It must be more fierce and defensive, not cute, not feminine, not a pet. Keep the child-safe rounded silhouette and soft luminous fairy-tale Chinese animation style, but do not add big baby eyes, blush, eyelashes, bows, flowers, jewelry, or mascot smile.
+
+Sheet layout:
+Three full-body views, evenly spaced, same scale and proportions: front, left side, back. Neutral production pose with tentacles arranged clearly enough to see the body shape and underside suction cups. Keep background simple warm cream with subtle shallow water ripples only; no dramatic action effects.
+
+Design details to show:
+Low heavy oval head/body, broad squat body, thick tentacles planted like a soft barrier, visible suction cup pattern, mottled dark purple-blue top spots, pale brown underside, narrowed eyes under heavy brow, downturned mouth, non-feminine monster expression. Back view should show head spots and tentacle arrangement.
+
+Avoid:
+No cute plush toy expression, no big teary eyes, no blush, no eyelashes, no shell charm as decoration, no bows, no flowers, no jewelry, no feminine styling, no sharp teeth, no spikes, no gore, no realistic slimy horror, no red glowing eyes, no dark horror lighting, no long creepy tentacles, no children, no text, no labels, no logo, no watermark.
+
+Output requirement:
+One polished 1024x1536 portrait turnaround sheet. It must read as the opening guardian monster, not the later softened cute form.

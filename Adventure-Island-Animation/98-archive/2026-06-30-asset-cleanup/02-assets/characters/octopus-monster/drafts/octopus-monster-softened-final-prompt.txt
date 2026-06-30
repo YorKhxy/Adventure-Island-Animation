@@ -1,0 +1,31 @@
+Use case: precise-object-edit
+Asset type: post-redemption creature final reference for children's animation
+
+Primary request:
+Edit Image 1 into the octopus monster's softened after-being-understood form. This is the same creature after the children understand and comfort it. Preserve its identity, body structure, purple-blue mottled skin, rounded heavy body, thick short tentacles, suction cups, cave/tide-pool environment, and soft luminous fairy-tale Chinese animation style, but change the emotional state from fierce guardian to calmer, relieved, and gently approachable.
+
+Input images:
+Image 1 is the locked opening-form octopus monster final, used for identity and structure.
+Image 2 is an old too-cute draft, used only as a softening direction reference. Do not copy its feminine or overly plush features.
+Image 3 is an old less-cute draft, used only as a midway reference for calmer body language.
+
+Story phase:
+This is the AFTER-softened form. The octopus has stopped blocking the children. It is still a monster creature, but now it feels understood, shy, a little embarrassed, and willing to be friends. It should be warmer and softer than the opening form, but still gender-neutral and not female-coded.
+
+Required changes from opening form:
+Relax the heavy brow, make the eyes gentler but not huge baby eyes, soften the mouth into a small shy almost-smile or uncertain relieved expression, lower the tentacles from a barrier pose into a relaxed open pose, remove or greatly reduce black ink clouds, add clear bubbles and calm water ripples, make the posture less defensive. Keep the same dark top spots and suction cup pattern so it reads as the same octopus.
+
+Keep:
+Same rounded octopus body, same purple-blue palette with softer highlights, same thick short tentacles, same suction cups, same non-human monster identity, same tide-pool/cave setting, same warm cream luminous style. Keep it child-safe and friendly.
+
+Avoid female-coded or over-cute design:
+No eyelashes, no blush, no bows, no flowers, no jewelry, no pretty shell hair accessory, no lipstick, no mascot smile, no giant sparkling baby eyes, no plush toy softness, no pink candy palette. It can be cute, but not feminine or toy-like.
+
+Avoid danger:
+No sharp teeth, no red eyes, no horror lighting, no gore, no slimy realistic texture, no weapons, no attacking pose, no dark villain aura.
+
+Composition:
+Portrait full-body reference, centered. The octopus is sitting/floating calmly in shallow water with tentacles relaxed forward and to the sides. A few bubbles rise around it. The cave behind it is brighter and less threatening. No children in the image.
+
+Output requirement:
+One polished 1024x1536 portrait final reference image named as the softened form. It must clearly be the same octopus after emotional change: softer, approachable, gender-neutral, not female-coded, and not the opening attack/guard pose.

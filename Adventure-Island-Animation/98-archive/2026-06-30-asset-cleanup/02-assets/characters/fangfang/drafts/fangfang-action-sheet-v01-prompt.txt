@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character action pose sheet for production
+Primary request: Create a 6-panel action pose sheet for Fangfang based strictly on input image 1. Match the warm clean multi-pose action-sheet style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Fangfang's final main reference and must control identity, face, hair, outfit, colors, rounder body type, and fire magic motifs. Image 2 is the Mumu action sheet and must control layout style: six full-body action poses, warm cream background, clean spacing, no text.
+Subject: Fangfang, 7-year-old boy with fire magic, Luoluo's twin younger brother, lively impulsive brave, rounder than Luoluo, messy dark short hair, coral-red/orange outfit, boots.
+Composition/framing: horizontal sheet with exactly six separated full-body action poses. Include: holding a tiny friendly fire orb, bouncing forward excitedly, making a small warm flame wisp, shielding cold with a harmless warm glow, accidentally surprised by a tiny spark, confident neutral standing pose. No labels, no text.
+Style/medium: polished soft bright fairy-tale Chinese animation, warm cream background, rounded safe fire magic, rounded child proportions, consistent with Mumu Candidate A.
+Constraints: fire must remain cute, rounded, warm, and safe. Keep him rounder and more energetic than Luoluo. Keep outfit consistent across all poses.
+Avoid: explosions, smoke, fire blades, burning objects, demon horns, armor, dragon-warrior costume, weapons, staff, shield, text, watermark, logo, AI hand or eye errors.

@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character action pose sheet for production
+Primary request: Create a 6-panel action pose sheet for Huihui based strictly on input image 1. Match the warm clean multi-pose action-sheet style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Huihui's final main reference and must control identity, face, hair, outfit, colors, body type, and wood magic motifs. Image 2 is the Mumu action sheet and must control layout style: six full-body action poses, warm cream background, clean spacing, no text.
+Subject: Huihui, 7-year-old girl with wood magic, gentle clever lightweight helper, side braid/low side tie, green ribbon and leaf bud ornaments, cream-and-soft-green outfit, seed pouch, soft boots.
+Composition/framing: horizontal sheet with exactly six separated full-body action poses. Include: presenting a tiny sprout, guiding curling vines, running lightly, crouching to help a plant grow, forming a soft leaf protection bubble, calm neutral standing pose. No labels, no text.
+Style/medium: polished soft bright fairy-tale Chinese animation, warm cream background, soft green wood magic, rounded child proportions, consistent with Mumu Candidate A.
+Constraints: keep Huihui slim and lightweight. Wood magic must be leaves, vines, sprouts, and gentle growth, not thorns or attacks. Keep outfit consistent across all poses.
+Avoid: thorn weapons, forest princess dress, adult proportions, extra characters, staff, shield, text, watermark, logo, AI hand or eye errors.

@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character action pose sheet for production
+Primary request: Create a 6-panel action pose sheet for Luoluo based strictly on input image 1. Match the warm clean multi-pose action-sheet style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Luoluo's final main reference and must control identity, face, hair, outfit, colors, slim body type, and water magic motifs. Image 2 is the Mumu action sheet and must control layout style: six full-body action poses, warm cream background, clean spacing, no text.
+Subject: Luoluo, 7-year-old boy with water magic and small gentle ice accents, Fangfang's twin older brother, calm clever, slightly slim/tall, dark short boy haircut, clear-water-blue short jacket, raised collar, wrist guards, simple belt, water flask or pouch, boots.
+Composition/framing: horizontal sheet with exactly six separated full-body action poses. Include: holding a compact water orb with tiny ice sparkles, guiding a smooth water ribbon, stepping calmly aside, cooling the ground with gentle frost mist, forming a soft water bubble around himself, calm neutral standing pose. No labels, no text.
+Style/medium: polished soft bright fairy-tale Chinese animation, warm cream background, clear liquid water magic, rounded child proportions, consistent with Mumu Candidate A.
+Constraints: water remains primary and gentle; ice is only a small rounded sparkle/mist accent. Keep him slim, calm, and boyish. Keep outfit consistent across all poses.
+Avoid: hair clip, long scarf, feminine styling, sharp ice spikes, snowstorm, sharp water blades, water shield wall, purple/indigo star palette, weapons, staff, text, watermark, logo, AI hand or eye errors.

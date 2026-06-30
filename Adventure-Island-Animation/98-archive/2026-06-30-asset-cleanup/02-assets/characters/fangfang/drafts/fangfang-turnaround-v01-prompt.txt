@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character turnaround sheet for production
+Primary request: Create a clean three-view turnaround sheet for Fangfang based strictly on input image 1. Match the sheet layout and soft bright fairy-tale Chinese animation style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Fangfang's final main reference and must control identity, face, hair, outfit, colors, rounder body type, and fire magic motifs. Image 2 is the Mumu turnaround sheet and must control layout style: front view, side view, back view, warm cream background, clean spacing, no text.
+Subject: Fangfang, 7-year-old boy with fire magic, Luoluo's twin younger brother, slightly shorter and rounder, lively brave expression, messy dark short hair with flame-like tuft, coral-red/orange outfit, warm sash, practical child boots.
+Composition/framing: horizontal sheet with exactly three full-body views: front, side, and back. Keep each view standing neutral and aligned at the same scale. Leave generous spacing. No labels, no text.
+Style/medium: polished soft bright fairy-tale Chinese animation, clean production concept art, rounded child proportions, warm cream background, soft linework, consistent with Mumu Candidate A.
+Constraints: preserve Fangfang's boy identity, messy short hair, round cheeks, red-orange outfit, flame trim, warm sash, boots, and rounder body. Show back details of jacket/capelet and sash. No magic effects except tiny warm ember accents if needed.
+Avoid: adult proportions, armor, dragon-warrior costume, scary flames, smoke, explosions, weapons, staff, shield, text, watermark, logo, AI hand or eye errors.

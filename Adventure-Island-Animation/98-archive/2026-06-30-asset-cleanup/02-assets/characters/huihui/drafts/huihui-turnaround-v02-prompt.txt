@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character turnaround sheet for production
+Primary request: Create a clean three-view turnaround sheet for Huihui based strictly on input image 1. Match the sheet layout and soft bright fairy-tale Chinese animation style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Huihui's final main reference and must control identity, face, hair, outfit, colors, body type, and wood magic motifs. Image 2 is the Mumu turnaround sheet and must control layout style: front view, side view, back view, warm cream background, clean spacing, no text.
+Subject: Huihui, 7-year-old girl with wood magic, slim and light, dark brown hair with side braid/low side tie, green ribbon and leaf bud hair ornaments, cream-and-soft-green child adventurer outfit, leaf collar/capelet, seed pouch, soft boots.
+Composition/framing: horizontal sheet with exactly three full-body views: front, side, and back. Keep each view standing neutral and aligned at the same scale. Leave generous spacing. No labels, no text.
+Style/medium: polished soft bright fairy-tale Chinese animation, clean production concept art, rounded child proportions, warm cream background, soft linework, consistent with Mumu Candidate A.
+Constraints: preserve Huihui's face, hair, leaf ornaments, outfit, pouch, boots, and slim light body. Show back details of braid, leaf accessories, capelet, pouch strap, and boots. No magic effects except very subtle leaf accents if needed.
+Avoid: changing hairstyle, changing outfit colors, princess dress, adult proportions, extra characters, weapons, staff, shield, text, watermark, logo, AI hand or eye errors.

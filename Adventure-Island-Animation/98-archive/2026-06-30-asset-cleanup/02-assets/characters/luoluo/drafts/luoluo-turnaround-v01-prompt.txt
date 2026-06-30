@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character turnaround sheet for production
+Primary request: Create a clean three-view turnaround sheet for Luoluo based strictly on input image 1. Match the sheet layout and soft bright fairy-tale Chinese animation style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Luoluo's final main reference and must control identity, face, hair, outfit, colors, slim body type, and water magic motifs. Image 2 is the Mumu turnaround sheet and must control layout style: front view, side view, back view, warm cream background, clean spacing, no text.
+Subject: Luoluo, 7-year-old boy with water magic and small gentle ice accents, Fangfang's twin older brother, slightly slim/tall, calm clever expression, dark short side-swept boy haircut, clear-water-blue short jacket with raised collar, wrist guards, simple belt, water flask or utility pouch, practical child boots.
+Composition/framing: horizontal sheet with exactly three full-body views: front, side, and back. Keep each view standing neutral and aligned at the same scale. Leave generous spacing. No labels, no text.
+Style/medium: polished soft bright fairy-tale Chinese animation, clean production concept art, rounded child proportions, warm cream background, soft linework, consistent with Mumu Candidate A.
+Constraints: preserve Luoluo's boy identity, short hair, no hair accessories, blue short jacket, wrist guards, belt, water flask/pouch, boots, and slimmer body. Show back details of jacket collar, belt, pouch/flask, pants, and boots. No magic effects except very subtle water and tiny rounded ice accents if needed.
+Avoid: girl-like styling, hair clip, flower clip, bow, long scarf, flowing shawl, cape ribbons, feminine eyelashes, sharp ice spikes, snowstorm, shield wall, starry indigo, purple, bells, weapons, staff, text, watermark, logo, AI hand or eye errors.

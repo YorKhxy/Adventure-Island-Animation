@@ -1,0 +1,23 @@
+Use case: illustration-story
+Asset type: character turnaround sheet for animation production
+
+Primary request:
+Create a clean three-view turnaround sheet for Luoluo using Image 1 as the locked final character reference. Show front view, side view, and back view of the same 7-year-old boy character on one sheet.
+
+Input image:
+Image 1 is the locked final Luoluo reference. Preserve identity, age, face, outfit, colors, water/ice motif, and especially the updated hairstyle.
+
+Required consistency:
+Luoluo is a 7-year-old boy and Fangfang's twin brother. He must look the same age range as Fangfang and younger than 10-year-old Haohao. Preserve the low, clean water-inspired short haircut: soft side part, damp curved locks, smooth wave-shaped bangs sweeping sideways, neat rounded sides, subtle blue bang highlight. Do not revert to the old generic fluffy short hair.
+
+Sheet layout:
+Three full-body standing poses, evenly spaced, same scale and proportions: front, left side, back. Neutral production pose, arms slightly away from body where needed for costume visibility. Plain warm cream background, soft light, no dramatic action effects.
+
+Design invariants:
+Keep the short blue water jacket, white inner shirt, wrist guards, belt gem, water bottle, blue cropped pants, boots, water swirl embroidery, small safe ice crystal charm, childlike slim proportions, calm boyish face. Keep the gentle luminous mumu-A fairy-tale Chinese animation style.
+
+Avoid:
+No hair clips, bows, flowers, long scarf, shawl, cape ribbons, feminine eyelashes, girl-like face, long hair, ponytail, Haohao-like upward heroic spikes, Fangfang-like flame messy hair, aggressive ice spikes, weapons, shield wall, extra characters, text, labels, logo, watermark.
+
+Output requirement:
+One polished production turnaround sheet, 1024x1536 portrait. The three views must clearly describe the costume and the updated hairstyle from all angles.

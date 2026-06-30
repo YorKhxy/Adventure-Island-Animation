@@ -1,0 +1,34 @@
+Use case: illustration-story
+Asset type: EP01 SEG01 keyframe for 15-second video production
+
+Primary request:
+Create a polished keyframe for EP01 SEG01 "arrival". This is not a poster and not a character lineup. It is the opening story frame for a 15-second video segment: Haohao has just woken up on Adventure Island, Mumu is scared and holding his sleeve, and the other four children are appearing in the background near a glowing island gate.
+
+Input images:
+Image 1 is Haohao final reference. Use for Haohao identity, age, hairstyle, outfit, earth-magic color language.
+Image 2 is Mumu final reference. Use for Mumu identity, age, hairstyle, outfit, gentle light-magic color language.
+Image 3 is Yuyu final reference. Use only for background character identity and outfit colors.
+Image 4 is Huihui final reference. Use only for background character identity and outfit colors.
+Image 5 is Luoluo final reference. Use only for background character identity and outfit colors.
+Image 6 is Fangfang final reference. Use only for background character identity and outfit colors.
+
+Scene:
+A magical island clearing at morning. Dewy grass in the foreground, soft leaves, warm cream sunlight, faint floating motes, a glowing stone-and-vine island gate in the far background. No readable text on the gate. The mood is mysterious, gentle, and safe, not scary.
+
+Composition:
+Wide cinematic keyframe, landscape 1920x1080 style. Haohao is the main foreground character, sitting up or kneeling in the grass after waking, slightly confused but protective. Mumu is beside him, smaller, holding his sleeve anxiously. Yuyu, Huihui, Luoluo, and Fangfang stand farther back in softer focus, just becoming visible, not posing like a poster. The glowing gate sits behind them as the story destination.
+
+Character placement:
+Haohao foreground left-center, largest and clearest. Mumu foreground right-center, close to Haohao and holding his sleeve. The other four children are mid-background, smaller, arranged naturally as they gather themselves after arriving. Keep their silhouettes and color palettes recognizable but do not over-detail their faces.
+
+Style:
+Soft luminous fairy-tale Chinese animation style matching the established character references. Warm cream light, clean painterly texture, rounded child-friendly shapes, gentle magical glow, no realistic horror, no dark mood.
+
+Important constraints:
+Keep Haohao about 10 years old and protective; keep Mumu about 7 years old and scared but safe. Other children are 7-year-old kids. Do not age them up. Do not add weapons. Do not add text, subtitles, logos, or watermarks. Do not turn this into a formal lineup or cover poster. It must feel like a story moment that can start a video.
+
+Avoid:
+No Chinese text, no fake letters, no watermark, no scary monster, no octopus in this segment, no battle pose, no adult proportions, no hyper-realism, no overly crowded composition, no floating character reference bubbles, no magic attack effects.
+
+Output requirement:
+One 1920x1080 landscape keyframe saved as `ep01_seg01_arrival_keyframe.png`. It should be suitable as the first image reference for a 15-second JiMeng video clip.

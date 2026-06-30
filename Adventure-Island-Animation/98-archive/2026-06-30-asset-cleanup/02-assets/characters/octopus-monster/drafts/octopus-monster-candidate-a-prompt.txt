@@ -1,0 +1,32 @@
+Use case: illustration-story
+Asset type: friendly antagonist character concept reference for children's animation
+
+Primary request:
+Create the first full-body reference image for a small octopus monster character in the same soft luminous fairy-tale Chinese animation style as Image 1. The character should feel like a misunderstood, slightly threatening but ultimately pitiful sea creature for a children's adventure story.
+
+Input image:
+Image 1 is the style reference: warm cream background, round child-friendly proportions, clean glowing magic aura, soft painterly Chinese animation look, bright gentle lighting, not realistic and not dark.
+
+Subject:
+A round, chubby baby octopus monster with a big soft head, short stubby tentacles, large watery eyes, tiny worried eyebrows, small pouty mouth, and a few harmless suction cups shaped like soft dots. It looks like it is blocking the path because it is scared and lonely, not because it is evil. It should be cute, a little muddy, and slightly mischievous, with a faint sea-glow aura.
+
+Personality and story role:
+Mild antagonist, misunderstood creature, lonely guardian of a small tide pool or cave entrance. It can create bubbles, harmless ink puffs, and gentle water swirls. It has a little threat through size and tentacle spread, but the audience should feel sorry for it.
+
+Style and mood:
+Soft luminous fairy-tale Chinese animation, matching the established Mumu-A character style. Warm cream background, pastel sea colors, rounded shapes, clean highlights, gentle protective bubble glow, expressive eyes, child-safe design.
+
+Color palette:
+Soft coral pink, lavender purple, pale aqua blue, creamy highlights, faint pearly glow. Avoid dark horror colors.
+
+Composition:
+Portrait full-body character reference, centered, standing/floating on a shallow watery ripple. Tentacles spread slightly in a rounded silhouette, not sharp. Add a few bubbles and tiny harmless ink clouds around it. Keep enough empty background for production reference.
+
+Design anchors:
+Round head, squat body, six to eight short rounded tentacles, soft dot suction cups, watery eyes, tiny forehead bump or little seaweed tuft, one small bandage or shell stuck to its head to make it pitiful. Slightly oversized compared with the children but not gigantic. No clothes unless a tiny shell charm improves cuteness.
+
+Avoid:
+No realistic octopus anatomy, no slimy horror, no sharp teeth, no claws, no spikes, no gore, no skulls, no angry demon face, no red glowing eyes, no dark underwater horror lighting, no long creepy tentacles, no adult monster body, no weapon, no aggressive attack pose, no disgusting texture, no text, no logo, no watermark.
+
+Output requirement:
+One polished character concept reference image, portrait 1024x1536. The monster must be round, pitiful, lightly threatening, and safe for young children.

@@ -1,0 +1,27 @@
+Use case: precise-object-edit
+Asset type: friendly antagonist character concept revision for children's animation
+
+Primary request:
+Edit Image 1 into a less cute, more convincing octopus guardian monster while preserving the established soft luminous fairy-tale Chinese animation style. Keep it child-safe and pitiful, but reduce the plush-toy cuteness. It should feel like a misunderstood obstacle creature that can block the kids for a scene.
+
+Input images:
+Image 1 is the current octopus candidate to revise.
+Image 2 is the style reference: warm cream background, soft painterly Chinese animation, clean glow, bright gentle lighting, not realistic and not dark.
+
+Revision direction:
+Make the octopus less adorable and more guarded: smaller glossy eyes, less sparkle, lower heavier worried eyebrows, no strong blush, a firmer small frown, slightly rougher muddy sea texture, wider low body silhouette, tentacles spread like a soft barrier wall, darker but still harmless ink clouds, and a clearer cave-guardian stance. It should look nervous, stubborn, and defensive, not cuddly.
+
+Threat level:
+Mild but readable. The threat comes from blocking posture, size, ink puffs, and tentacle wall shape. It must never become horror, evil, or aggressive. The audience should think: "This creature is in the way and might cause trouble, but it is scared and can be helped."
+
+Keep:
+Round chubby octopus body, lavender-purple and coral-pink palette, shell or seaweed/bandage detail on the head, cave/tide-pool setting, soft water glow, bubbles, child-safe rounded tentacles, soft dot suction cups, warm cream luminous style.
+
+Reduce or remove:
+Overly big baby eyes, teary sparkle overload, strong cheek blush, toy-like plush softness, cute mascot smile, overly polished candy colors, tiny helpless pet feeling.
+
+Avoid:
+No realistic octopus anatomy, no slimy horror, no sharp teeth, no claws, no spikes, no gore, no skulls, no red glowing eyes, no demon face, no dark horror lighting, no long creepy tentacles, no constricting children, no attack pose, no weapon, no disgusting texture, no text, no logo, no watermark.
+
+Output requirement:
+One polished full-body character reference image, portrait 1024x1536. It should be clearly less cute than Candidate B, still rounded and child-safe, with a stronger misunderstood guardian monster read.

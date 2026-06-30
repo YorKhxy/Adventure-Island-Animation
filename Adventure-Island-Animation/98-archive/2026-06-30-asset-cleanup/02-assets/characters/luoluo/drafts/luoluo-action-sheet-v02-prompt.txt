@@ -1,0 +1,23 @@
+Use case: illustration-story
+Asset type: character action pose sheet for animation production
+
+Primary request:
+Create a dynamic action pose sheet for Luoluo using Image 1 as the locked final character reference. Preserve identity, outfit, colors, age, and especially the updated hairstyle.
+
+Input image:
+Image 1 is the locked final Luoluo reference.
+
+Required consistency:
+Luoluo is a 7-year-old boy and Fangfang's twin brother, same age range as Fangfang and younger than 10-year-old Haohao. Preserve his low, clean water-inspired short haircut with soft side part, damp curved locks, wave-shaped side-swept bangs, neat rounded sides, and subtle blue bang highlight. Keep him calm, smart, boyish, and childlike.
+
+Action poses:
+Four to six full-body poses on one sheet: holding a water orb, guiding a gentle water ribbon, stepping over a shallow water ripple, catching droplets in a small bubble, calming a small safe snowflake/ice droplet, protective but non-combat stance. Water is the main element; ice is only tiny safe decorative accents.
+
+Design invariants:
+Keep the short blue water jacket, white inner shirt, wrist guards, belt gem, water bottle, blue cropped pants, boots, water swirl embroidery, small ice crystal charm, warm cream background, soft luminous mumu-A fairy-tale Chinese animation style.
+
+Avoid:
+No hair clips, bows, flowers, long scarf, shawl, cape ribbons, feminine eyelashes, girl-like face, long hair, ponytail, Haohao-like heroic spikes, Fangfang-like flame messy hair, aggressive ice spikes, water blades, weapons, shield wall, explosions, scary magic, extra characters, text, labels, logo, watermark.
+
+Output requirement:
+One polished action pose sheet, 1024x1536 portrait. Every pose must keep the same updated hairstyle and approved Luoluo design.

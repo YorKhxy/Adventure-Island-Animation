@@ -1,0 +1,33 @@
+Use case: precise-object-edit
+Asset type: opening antagonist creature concept revision for children's animation
+
+Primary request:
+Edit Image 1 into the octopus monster's opening-scene form. This version should be more fierce, more defensive, more gender-neutral, and less cute/feminine than the previous candidates. It must still fit a children's animation and the established soft luminous fairy-tale Chinese animation style.
+
+Input images:
+Image 1 is the current octopus candidate to revise.
+Image 2 is the style reference: warm cream background, soft luminous painterly Chinese animation, bright clean light, rounded readable shapes, not realistic horror.
+
+Story phase:
+This is the BEFORE-being-softened form. At the start of the story, the octopus is a scared but aggressive tide-pool guardian blocking the kids' path. Later it can be softened into a cute form, but this image should be the initial intimidating version.
+
+Revision direction:
+Make it appropriately fierce and non-feminine: smaller hard eyes, no big baby sparkle, no eyelashes, no blush, no cute pout, no flower-like shell styling. Give it a low heavy brow ridge, narrowed eyes, clenched frown, broader squat body, darker purple-blue mottled skin, thicker tentacles planted like a barricade, stronger suction cups, and more visible dark ink clouds curling behind it. The creature should read as gender-neutral monster, not a pretty mascot.
+
+Threat level:
+Medium-low children's animation threat. It should look capable of blocking the path, splashing water, and releasing ink. Use posture, narrowed eyes, tentacle wall shape, shadowed underside, and ink clouds for danger. No gore, no horror, no sharp teeth, no realistic slimy anatomy.
+
+Keep:
+Rounded silhouette, child-safe readable shape, octopus body, tide-pool cave entrance, bubbles, watery glow, pastel fairy-tale lighting, soft painterly style. Keep it safe enough for children but clearly less cute than Candidate B and Candidate C.
+
+Remove or reduce:
+Remove shell charm, bandage cuteness, seaweed hair decoration if it reads feminine, teary baby eyes, sparkly eyes, blush, plush toy softness, pink candy palette, helpless pet expression.
+
+Composition:
+Portrait full-body creature reference, centered in front of a cave/tide-pool entrance. Tentacles spread horizontally and forward like a soft barrier. Body lowered, head slightly tilted down, brow casting a mild shadow over the eyes. Ink clouds behind both sides, water ripples below, bubbles around. No children in the image.
+
+Avoid:
+No female-coded styling, no eyelashes, no blush, no bows, no flowers, no jewelry, no cute mascot smile, no realistic octopus anatomy, no slimy horror, no sharp teeth, no claws, no spikes, no gore, no skulls, no red glowing eyes, no demon face, no dark horror lighting, no long creepy tentacles, no constricting children, no weapon, no text, no logo, no watermark.
+
+Output requirement:
+One polished full-body concept reference, portrait 1024x1536. It should read as the octopus monster's opening guardian form: fierce enough to be an obstacle, gender-neutral, rounded, and still child-safe.

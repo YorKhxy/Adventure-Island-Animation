@@ -1,0 +1,23 @@
+Use case: illustration-story
+Asset type: character expression sheet for animation production
+
+Primary request:
+Create an 8-panel expression sheet for Luoluo using Image 1 as the locked final character reference. Preserve identity, outfit, colors, age, and especially the updated hairstyle.
+
+Input image:
+Image 1 is the locked final Luoluo reference.
+
+Required consistency:
+Luoluo is a 7-year-old boy and Fangfang's twin brother, same age range as Fangfang and younger than 10-year-old Haohao. Preserve his low, clean water-inspired short haircut with soft side part, damp curved locks, wave-shaped side-swept bangs, neat rounded sides, and subtle blue bang highlight. Keep him calm, smart, boyish, and childlike.
+
+Expressions:
+Eight clear head-and-upper-body panels: calm smile, curious thinking, focused water magic, slightly worried, determined, gentle laugh, surprised, protective reassurance. Use subtle water droplets or soft blue glow only as light accents, not big action effects.
+
+Design invariants:
+Keep the short blue water jacket collar, white inner shirt, wrist guards when visible, warm cream background, clean soft lighting, mumu-A fairy-tale Chinese animation style. Male child face, no feminine styling.
+
+Avoid:
+No hair clips, bows, flowers, long scarf, shawl, cape ribbons, feminine eyelashes, girl-like face, long hair, ponytail, Haohao-like heroic spikes, Fangfang-like flame messy hair, aggressive ice, weapons, extra characters, cropped duplicate bodies, text, labels, logo, watermark.
+
+Output requirement:
+One polished expression sheet, 1024x1536 portrait, readable 8-panel layout. All panels must feel like the same Luoluo with the updated hairstyle.

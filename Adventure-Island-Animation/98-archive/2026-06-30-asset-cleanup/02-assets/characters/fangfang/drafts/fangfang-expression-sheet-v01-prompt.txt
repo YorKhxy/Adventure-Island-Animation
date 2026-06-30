@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: character expression sheet for production
+Primary request: Create an 8-panel expression sheet for Fangfang based strictly on input image 1. Match the clean warm expression-sheet layout and soft bright fairy-tale Chinese animation style of input image 2. This is a production reference sheet, not a new redesign.
+Input images: Image 1 is Fangfang's final main reference and must control identity, face, hair, outfit, colors, and fire-magic character. Image 2 is the Mumu expression sheet and must control layout style: warm cream background, close-up/bust panels, clean spacing, no text.
+Subject: Fangfang, 7-year-old boy with fire magic, lively impulsive twin younger brother, rounder body language, messy dark short hair, coral-red/orange outfit.
+Composition/framing: horizontal sheet with exactly eight bust or half-body expression panels in a clean 4 by 2 grid. No labels, no text. Expressions: big cheerful grin, impulsive excitement, pouting frustration, surprised, brave determination, laughing, focused controlling a tiny flame, worried but trying to be brave.
+Style/medium: polished soft bright fairy-tale Chinese animation, warm cream background, soft linework, consistent with Mumu Candidate A.
+Constraints: keep same face identity, messy short hair, boy age, red-orange outfit collar, round cheeks, and energetic temperament across all panels. Fire accents must be small and safe.
+Avoid: adult face, scary anger, demon styling, smoke, explosions, duplicate identical expressions, text labels, watermark, logo, weapons, AI hand or eye errors.

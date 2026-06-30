@@ -1,0 +1,23 @@
+Use case: illustration-story
+Asset type: creature action pose sheet for animation production
+
+Primary request:
+Create a dynamic action pose sheet for the octopus monster opening form using Image 1 as the locked final reference.
+
+Input image:
+Image 1 is the locked opening-form octopus monster final. Preserve the exact identity: fierce gender-neutral tide-pool guardian, low heavy rounded body, narrowed eyes, low brow, dark purple-blue mottled skin, thick short tentacles, suction cups, black ink-cloud ability, cave-guardian feeling.
+
+Required consistency:
+This is the opening-scene form, before being softened. It should look capable of blocking the children and causing trouble, but still child-safe. Do not make it cute, feminine, pretty, or pet-like. Do not make it horror.
+
+Action poses:
+Four to six full-body poses on one sheet: spreading tentacles as a barrier, releasing a black ink puff, slapping water to create a splash wall, curling tentacles defensively around the cave entrance, lowering its body in a stubborn warning stance, sliding sideways through shallow water. Actions should be obstacle/defense only, not weapon attacks.
+
+Style and staging:
+Soft luminous fairy-tale Chinese animation style, warm cream background, shallow tide-pool water ripples, bubbles, controlled ink clouds, readable silhouette. Keep rounded child-safe forms and thick soft tentacles.
+
+Avoid:
+No cute plush toy expression, no big teary eyes, no blush, no eyelashes, no bows, no flowers, no jewelry, no feminine styling, no sharp teeth, no claws, no spikes, no gore, no realistic slimy horror, no red glowing eyes, no attacking or grabbing children, no weapons, no text, no labels, no logo, no watermark.
+
+Output requirement:
+One polished 1024x1536 portrait action pose sheet. Every pose must preserve the opening guardian monster design and avoid the later cute softened form.
