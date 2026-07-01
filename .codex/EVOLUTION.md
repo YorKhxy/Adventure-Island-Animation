@@ -11,7 +11,7 @@
     用户给出修正或反馈时，主 Agent 派发 feedback-observer 记录。
 
     **第二层：规则毕业**
-    feedback 重复出现 3+ 次 → evolution-runner 提议升级为 SKILL.md 或 CLAUDE.md 中的正式规则。
+    feedback 重复出现 3+ 次 → evolution-runner 提议升级为 SKILL.md 或 AGENTS.md 中的正式规则。
 
     **第三层：Skill 优化**
     某 Skill 来源的 feedback 评分持续偏低 → evolution-runner 提议调整该 Skill。

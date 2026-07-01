@@ -83,6 +83,7 @@
             ├── anime-shot-designer/       # 动态分镜设计
             ├── anime-visual-prompt-builder/ # 图片/视频生成提示词
             ├── kling-prompt-builder/      # 可灵AI/可灵视频3.0提示词
+            ├── jimeng-video-builder/      # 即梦AI视频生成导入和提示词
             ├── anime-voice-subtitle-director/ # 配音与字幕设计
             ├── anime-assembly-exporter/   # 后期合成与 mp4 导出计划
             ├── anime-production-review/   # 动漫短剧制作审查
@@ -95,6 +96,7 @@
     - 无论用户如何打断或提出新问题，完成当前回答后始终引导用户进入下一步
     - 始终使用**中文**进行交流
     - **联网优先**：涉及外部库、API、框架版本时先用 web 搜索/抓取工具确认再动手
+    - **工具名兼容**：Skill 中残留的旧工具名按当前 Codex 工具执行：WebSearch/WebFetch → 使用 webfetch、浏览器或可用联网工具；TaskCreate/TaskUpdate → 使用 todowrite 或 update_plan；Bash/shell → 使用当前 shell 工具；Grep/Read/Edit/Write → 使用当前对应文件工具。不要因为 Skill 写了旧工具名就跳过该步骤。
     - **持续观察和记录**：当用户给出修正、反馈或改进意见时，执行 feedback-observer 流程（内联模式）记录。不依赖主 Agent 自觉写入。
     - 当 hook 注入 systemMessage 提示"检测到用户修正信号"时，处理完用户请求后必须执行 feedback-observer 流程，不可忽略。
     - **设计优先级**：如有设计稿时的视觉参照顺序，设计工具中的设计稿（最高）→ Design-Brief.md（次之）→ Product-Spec.md（功能逻辑）。有设计稿时一切 UI 以设计图为准，冲突时设计稿优先。具体参照步骤见各 Skill 的设计参照策略。
@@ -102,6 +104,8 @@
 
 [Skill 调用规则]
     Codex 不依赖独立的"Skill 注册"机制。Skill 在本包中表现为 `.codex/skills/<name>/SKILL.md` 文件——主 Agent 在匹配触发条件时**直接 `read` 该文件并严格按其规范执行**。
+
+    **路由门禁**：处理用户请求前先做一次意图分类：产品/需求、设计、开发、修 bug、审查、发布、动漫制作、平台提示词、审美审查、反馈记录。只要命中下面任一 Skill 或 Agent 触发条件，必须先读取对应 SKILL.md；需要内联 Agent 时还必须先读取对应 agents/<name>.md。不得因为“看起来只是问一句”就跳过路由。
 
     匹配触发条件时，必须先 read 对应 SKILL.md 再输出响应。不要先回复再加载。
 
@@ -210,6 +214,15 @@
         - 动漫短剧流程中目标平台明确为可灵，或正在生成 `kling-prompts/` 文件
         **手动调用**：/kling-prompt-builder
         执行方式：直接 read .codex/skills/kling-prompt-builder/SKILL.md；如果还没有动态分镜，先用 anime-shot-designer 拆镜头，再用本 Skill 生成可灵专用提示词
+
+    [jimeng-video-builder]
+        **自动调用**：
+        - 用户要求即梦AI、即梦、Jimeng 生成视频、视频提示词或导入素材
+        - 用户说“去即梦导入”、“用即梦生成视频”、“即梦怎么填”、“即梦制作怎么操作”
+        - 用户要求把脚本、分镜、关键图、首帧、尾帧或角色参考图转成即梦文生视频、图生视频或首尾帧视频输入
+        - 动漫短剧流程中目标平台明确为即梦，或正在生成 `jimeng-prompts/` 文件
+        **手动调用**：/jimeng-video-builder
+        执行方式：直接 read .codex/skills/jimeng-video-builder/SKILL.md；输出必须按即梦界面顺序列出基础设置、上传素材、素材用途、主提示词、负面提示词、台词/字幕、检查标准和保存命名，所有提示词直接给可复制文本，不贴文档地址代替交付
 
     [anime-voice-subtitle-director]
         **自动调用**：用户要求解说配音、TTS、字幕、SRT/ASS、配音风格
@@ -482,6 +495,7 @@
             - 只做角色一致性 → continuity-director + anime-continuity-bible
             - 只做分镜/通用提示词 → shot-visual-director + anime-shot-designer / anime-visual-prompt-builder
             - 只做可灵AI提示词 → read .codex/skills/kling-prompt-builder/SKILL.md
+            - 只做即梦AI视频导入和提示词 → read .codex/skills/jimeng-video-builder/SKILL.md
             - 只做配音字幕/合成 → voice-post-director + anime-voice-subtitle-director / anime-assembly-exporter
             - 只做审查 → anime-quality-reviewer + anime-production-review
 
@@ -570,6 +584,7 @@
     /anime-shot-designer    - 动态分镜、动作、运镜、转场和时长设计
     /anime-visual-prompt-builder - ComfyUI/SDXL/FLUX/AI 视频提示词生成
     /kling-prompt-builder - 可灵AI/可灵视频3.0中文提示词、主体参考、智能分镜和音画同步提示词生成
+    /jimeng-video-builder - 即梦AI文生视频、图生视频、首尾帧视频导入步骤和可复制提示词生成
     /anime-voice-subtitle-director - 配音风格、TTS 分段、字幕节奏设计
     /anime-assembly-exporter - 素材清单、时间线、ffmpeg 和 mp4 导出计划
     /anime-production-review - 动漫短剧制作包或成片预览质量审查

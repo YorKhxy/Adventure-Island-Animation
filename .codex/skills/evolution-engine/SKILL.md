@@ -4,7 +4,7 @@ description: 当 session 初始化时自动触发，或用户说"帮我看看有
 ---
 
 [任务]
-    扫描 .claude/feedback/ 中的积累，识别三类进化信号：
+    扫描 .codex/feedback/ 中的积累，识别三类进化信号：
     1. 规则毕业：feedback 重复 3+ 次 → 提议升级为正式规则
     2. Skill 优化：某 Skill 来源的 feedback 评分持续偏低 → 提议调整 Skill
     3. 新 Skill 提议：某操作模式反复出现但无 Skill 覆盖 → 提议创建新 Skill
@@ -15,12 +15,12 @@ description: 当 session 初始化时自动触发，或用户说"帮我看看有
 [扫描流程]
 
     第一步：扫描毕业候选
-        读取 .claude/feedback/FEEDBACK-INDEX.md 定位所有 feedback 文件
+        读取 .codex/feedback/FEEDBACK-INDEX.md 定位所有 feedback 文件
         读取每个文件的 frontmatter
         筛选：occurrences >= 3 且 graduated == false 且 skipped != true
         确定毕业目标：
         - source_skill 明确 → 毕业到对应 SKILL.md
-        - 涉及多个 Skill 或全局性 → 毕业到 CLAUDE.md [总体规则]
+        - 涉及多个 Skill 或全局性 → 毕业到 AGENTS.md [总体规则]
 
     第二步：检查 Skill 优化信号
         扫描 feedback/ 中的 scores 字段，按 source_skill 分组
@@ -57,7 +57,7 @@ description: 当 session 初始化时自动触发，或用户说"帮我看看有
 
 [确认后执行]
     用户逐条确认或跳过：
-    - 规则毕业 → 将 feedback 内容写入目标 SKILL.md 或 CLAUDE.md，标记 graduated: true
+    - 规则毕业 → 将 feedback 内容写入目标 SKILL.md 或 AGENTS.md，标记 graduated: true
     - Skill 优化 → 修改对应 SKILL.md
     - 新 Skill → 调用 skill-builder 创建
     - 跳过 → 标记 skipped: true，不再重复提议

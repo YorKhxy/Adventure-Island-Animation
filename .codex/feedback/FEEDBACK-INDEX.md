@@ -18,3 +18,10 @@
 - [图片资产局部瑕疵只修问题区域](fix-only-bad-region-in-approved-image-assets.md) — 已被用户认可的图片资产出现局部瑕疵时，只修问题区域，不要整张重做。
 - [关键图构图修订应保留已认可布局](keyframe-composition-revisions-should-preserve-approved-layout.md) — 用户只要求拉远或微调时，保留原图人物布局和叙事构图，不要重做成另一张图。
 - [可灵字幕指视频同步字幕而不是关键图加字](kling-subtitles-mean-video-sync-not-keyframe-text.md) — 用户要求字幕时，应在可灵视频提示词中写音画同步字幕，不要把字幕画进关键图。
+- [可灵发光效果不足要控制环境曝光对比](kling-glow-contrast-needs-environment-exposure-control.md) — 发光物不明显时，应轻微压低环境曝光建立对比，而不是只堆亮度。
+- [视觉提示词定稿前必须使用审美和分镜 Agent](aesthetic-agents-must-be-used-before-visual-prompt-finalization.md) — 动漫视频提示词不能补丁式堆词，必须先用审美/动画/分镜规则重构镜头和运动层次。
+- [可灵复杂群戏优先使用自定义分镜](kling-complex-scenes-need-custom-shot-list.md) — 多角色和特效递进段落应拆成 3-5 个清晰 shot，而不是只塞一个大提示词框。
+- [参考素材用途必须明确分工](reference-media-roles-must-be-explicit.md) — 首帧、主体参考、风格参考和动作文本必须各司其职，不能含混写“都参考”。
+- [可灵导入说明必须按界面顺序给可复制文本](kling-import-instructions-must-be-copy-ready.md) — 用户问导入可灵时，直接给按界面顺序排列的复制文本，不只给文件行号。
+- [即梦视频交付必须直接给可复制操作和提示词](jimeng-video-output-must-be-copy-ready.md) — 用户问即梦导入或生成视频时，必须按即梦界面顺序给操作和完整可复制提示词。
+- [Skill 和 Agent 路由必须先做意图门禁](skill-agent-routing-must-be-preflighted.md) — 每次处理请求前先分类，命中 Skill/Agent 时必须先读取对应文件，不能凭感觉直接答。
