@@ -65,7 +65,7 @@ final/ep01_full_90s.mp4
 
 | 段号 | 时间 | 段名 | 剧情功能 | 对应原分镜 | 主参考资产 |
 | --- | --- | --- | --- | --- | --- |
-| SEG01 | 0-15s | arrival | 醒来 + 伙伴聚集 + 冒险岛入口出现 | 镜头 1-3 | 浩浩、沐沐、六人 final |
+| SEG01 | 0-15s | arrival | 醒来 + 伙伴聚集 + 藤蔓石拱潮汐洞门出现 | 镜头 1-3 | 浩浩、沐沐、六人 final |
 | SEG02 | 15-30s | powers_awaken | 六种魔法觉醒，建立角色能力 | 镜头 4-5 | 六人 final + 三件套 |
 | SEG03 | 30-45s | octopus_appears | 章鱼怪开场形态冲出并挡路 | 镜头 6 | 章鱼 opening final |
 | SEG04 | 45-60s | teamwork_defense | 孩子们配合防御，压住章鱼 | 镜头 7-8 | 六人 final、章鱼 opening final |
@@ -78,11 +78,11 @@ final/ep01_full_90s.mp4
 
 - 时间：0-15s
 - 文件前缀：`ep01_seg01_arrival`
-- 关键图状态：PASS，最终源图 `segments/keyframes/ep01_seg01_arrival_keyframe.png`，可灵上传优先用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`。
-- 可灵上传包状态：READY，执行清单已写入 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md`。
+- 关键图状态：PASS，已按用户通过版替换 active；门洞右侧特效完整，洞内为看不见尽头的深蓝黑潮汐洞道，浩浩保持两条腿两只脚。
+- 可灵上传包状态：READY_V2，已重写为可灵视频3.0词库预设活化版，优先使用自定义分镜，关键图作为场景/角色/结尾远景锚点，不把第一秒做成六人全景站桩。
 - 主剧情：浩浩醒来，发现自己和伙伴们来到陌生的冒险岛入口。
-- 关键画面：草叶和天空从模糊到清晰，浩浩坐起，沐沐抓住他的衣角，其他伙伴在后方陆续出现，远处有发光的岛门。
-- 镜头设计：近景醒来 → 中景兄妹 → 轻推到远处发光大门。
+- 关键画面：草叶和天空从模糊到清晰，浩浩坐在草地上且双腿双脚结构完整，沐沐抓住他的衣角，其他伙伴在后方陆续出现，远处有发光的藤蔓石拱潮汐洞门；石拱门本身就是通向深水洞道的入口，门内暗蓝水面安静可见，只做后续章鱼出场铺垫。草地、藤蔓和树冠必须干净偏青绿，叶面草面成片；允许少量环境微光点，但不得形成密集露珠、萤火粒子或芝麻状噪声。
+- 镜头设计：环境下摇近景交代兄妹 → 跟随兄妹视线 → 环绕拉远逐步揭示伙伴 → 上升推进到远景入口苏醒。
 - 旁白/台词：
   - 旁白：浩浩一醒来，就发现自己来到了陌生的冒险岛。
   - 沐沐：哥哥，我有点害怕。
@@ -90,23 +90,24 @@ final/ep01_full_90s.mp4
 - 字幕：浩浩醒来时，发现大家来到了陌生的冒险岛。
 - 可灵AI中文提示词：已按 `kling-prompt-builder` 规范生成最终版 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md`。
   ```text
-  使用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg` 作为可灵上传首帧。浩浩从草地上醒来并坐起，沐沐害怕地抓住浩浩衣角；镜头后拉显露后方四个伙伴和发光岛门。钰钰侧身指向远处发光大门，骆骆半蹲低头观察脚边水纹，卉卉轻触草叶或藤叶，方方小跑靠近。四个后景孩子动作必须各不相同，不要同步抬手，不要站成一排。柔亮童话国漫风，暖奶油清晨光效，无文字、无字幕、无水印、无章鱼怪、无战斗姿势。
+  使用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg` 作为可灵关键图/首帧素材。关键图主要作为场景、角色和结尾远景构图锚点；视频前6秒不要六人全景站桩，先用环境下摇、近景景深、草叶遮挡和跟随视线交代浩浩与沐沐，再通过环绕拉远逐步揭示钰钰、骆骆、卉卉、方方。门洞右侧光效必须完整，洞内是看不见尽头的深蓝黑潮汐洞道。详见 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md`。
   ```
 - 生成风险：多角色容易变脸；如果不稳，先生成浩浩/沐沐近景，再用剪辑转到六人远景。
-- 关键图备注：最终版已修正后景动作差异：钰钰站立侧身指向大门，骆骆半蹲低头观察水纹。旧版已归档，不进入视频生产。
-- 转场到下一段：大门光芒扩散，切到魔法阵亮起。
+- 关键图备注：PASS，用户已确认 SEG01 当前版通过。旧候选和旧 active 已归档，不进入视频生产。
+- 转场到下一段：藤蔓石拱潮汐洞门光芒扩散，切到魔法阵亮起；画面空间仍保留同一个门洞入口，方便 SEG02 结尾出现水面异常。
 
 ### SEG02 - powers_awaken
 
 - 时间：15-30s
 - 文件前缀：`ep01_seg02_powers_awaken`
+- 关键图状态：PASS，已同步 SEG01 当前场景色调；钰钰手掌上方为金铃/金线/铃声共鸣，骆骆水系改为蓝白同心涟漪和水弧，卉卉保留绿色藤叶，门洞延续 SEG01 同一造型并看不见尽头。
 - 主剧情：六个孩子的能力依次亮起。
-- 关键画面：六个孩子围成半圆，脚下魔法阵亮起，金、木、水、火、土、光六种元素依次闪过。
-- 镜头设计：全景环绕 + 角色能力快切，最后回到六人合影式构图。
+- 关键画面：六个孩子围成半圆，脚下魔法阵亮起，金、木、水、火、土、光六种元素依次闪过；钰钰的金属性以小金铃、金线、金属星片和铃声共鸣表现，不使用蓝色主特效。
+- 镜头设计：魔法阵局部特写 → 环绕推进第一组能力 → 右摇跟随第二组能力 → 拉远上摇到全员远景和门洞深水异常。
 - 旁白/台词：
   - 旁白：冒险岛的测试开始了。金、木、水、火、土、光，六种魔法同时亮起。
 - 字幕：六种魔法，在孩子们身边亮了起来。
-- 可灵AI中文提示词：READY，最终版 `segments/kling-prompts/ep01_seg02_powers_awaken_kling_prompt.md`。
+- 可灵AI中文提示词：READY_V2，已重写为可灵视频3.0词库预设活化版 `segments/kling-prompts/ep01_seg02_powers_awaken_kling_prompt.md`；优先自定义分镜，关键图作为场景/角色/结尾全景锚点，避免第一秒六人同时发光站桩。
 - 生成风险：六人同屏难度高；必要时拆成 3 个双人镜头拼接，不强求单镜完成。
 - 转场到下一段：地面水纹突然震动，魔法光被墨色阴影盖住。
 
@@ -201,8 +202,9 @@ final/ep01_full_90s.mp4
 
 ## Missing Assets Before Generation
 
-- SEG01 关键图已通过：`segments/keyframes/ep01_seg01_arrival_keyframe.png`；可灵上传图已生成：`segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg`。
-- SEG02-SEG06 关键图尚未生成。
+- SEG01 关键图已通过并替换 active：门洞右侧特效完整，洞内看不见尽头，浩浩双脚完整。
+- SEG02 关键图已通过并替换 active：匹配 SEG01 当前色调和门洞造型，钰钰金铃成立，骆骆水系与卉卉植物系已区分。
+- SEG03-SEG06 关键图尚未生成。
 - 6 条可灵视频尚未生成。
 - SEG02-SEG06 配音脚本已补齐，实际音频尚未生成。
 - SEG02-SEG06 SRT 字幕已补齐。
@@ -210,4 +212,4 @@ final/ep01_full_90s.mp4
 
 ## Recommended Next Step
 
-先用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg` 和 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md` 生成 SEG01 可灵视频。SEG01 通过后，再逐段生成 SEG02-SEG06 的关键图和可灵视频；不要一次性全跑，废片成本太高。
+先用 `segments/keyframes/ep01_seg01_arrival_keyframe_upload.jpg` 和 `segments/kling-prompts/ep01_seg01_arrival_kling_prompt.md` 生成 SEG01。通过后，再用 `segments/keyframes/ep01_seg02_powers_awaken_keyframe.png` 和 `segments/kling-prompts/ep01_seg02_powers_awaken_kling_prompt.md` 生成 SEG02。两段都优先开启自定义分镜并按词库预设逐镜填写；不要一次性全跑，废片成本太高。

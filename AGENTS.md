@@ -23,7 +23,8 @@
     7. **代码审查** → 调用 code-review，审查质量并修复（按需）
     8. **构建发布** → 调用 release-builder，打包或部署上线（按需）
     9. **动漫短剧生产** → 调用 anime-workflow-orchestrator，生成剧本、分镜、提示词、配音字幕和合成计划（按需）
-    10. **审美质量审查** → 调用 aesthetic-review-orchestrator，审查美术图、漫画页、动画镜头和整体视觉风格（按需）
+    10. **合理性连续性审查** → 调用 anime-logic-continuity-review，审查故事因果、空间尺度、角色动机和镜头衔接（按需）
+    11. **审美质量审查** → 调用 aesthetic-review-orchestrator，审查美术图、漫画页、动画镜头和整体视觉风格（按需）
 
 [文件结构]
     project/
@@ -51,6 +52,7 @@
         │   ├── shot-visual-director.md    # 分镜与视觉提示词导演
         │   ├── voice-post-director.md     # 配音字幕与后期统筹
         │   ├── anime-quality-reviewer.md  # 动漫短剧质量审查
+        │   ├── story-logic-reviewer.md    # 故事合理性与空间连续性审查
         │   ├── aesthetic-director.md      # 总体审美审查
         │   ├── art-image-critic.md        # 单张美术图审查
         │   ├── comic-art-editor.md        # 漫画页与分格审查
@@ -87,6 +89,7 @@
             ├── anime-voice-subtitle-director/ # 配音与字幕设计
             ├── anime-assembly-exporter/   # 后期合成与 mp4 导出计划
             ├── anime-production-review/   # 动漫短剧制作审查
+            ├── anime-logic-continuity-review/ # 故事合理性与空间连续性审查
             ├── aesthetic-review-orchestrator/ # 美术/漫画/动画审美总审查
             ├── art-image-critique/        # 单张图像美术审查
             ├── comic-page-critique/       # 漫画页与条漫审查
@@ -99,13 +102,14 @@
     - **工具名兼容**：Skill 中残留的旧工具名按当前 Codex 工具执行：WebSearch/WebFetch → 使用 webfetch、浏览器或可用联网工具；TaskCreate/TaskUpdate → 使用 todowrite 或 update_plan；Bash/shell → 使用当前 shell 工具；Grep/Read/Edit/Write → 使用当前对应文件工具。不要因为 Skill 写了旧工具名就跳过该步骤。
     - **持续观察和记录**：当用户给出修正、反馈或改进意见时，执行 feedback-observer 流程（内联模式）记录。不依赖主 Agent 自觉写入。
     - 当 hook 注入 systemMessage 提示"检测到用户修正信号"时，处理完用户请求后必须执行 feedback-observer 流程，不可忽略。
+    - **动漫制作四段闭环**：凡是用户要求制作新篇章、改编、分镜、可灵/即梦提示词、成片审查或审美检查，必须主动按“制作 → 合理性 → 审美 → 落地”执行，不等用户另行要求。制作阶段调用 anime-workflow/anime-shot/visual/kling/jimeng 等对应 Skill；合理性阶段调用 anime-logic-continuity-review，检查故事因果、空间尺度、角色动机、镜头衔接和平台误生成风险；审美阶段调用 aesthetic-review-orchestrator，并按对象补 art/comic/animation 专项审查；落地阶段输出平台可执行的导入步骤、复制文本、文件路径、命名、复审标准和失败重做条件。不得只交一份提示词就宣称完成。
     - **设计优先级**：如有设计稿时的视觉参照顺序，设计工具中的设计稿（最高）→ Design-Brief.md（次之）→ Product-Spec.md（功能逻辑）。有设计稿时一切 UI 以设计图为准，冲突时设计稿优先。具体参照步骤见各 Skill 的设计参照策略。
     - **资产只留最终版**：动漫项目 active 目录只保留最终使用的图片、提示词、字幕、音频脚本和视频文件；候选图、旧版本、过程提示词、旧关键图、旧审查记录和临时产物一律归档到 `98-archive/`，不得留在 active 生产路径。
 
 [Skill 调用规则]
     Codex 不依赖独立的"Skill 注册"机制。Skill 在本包中表现为 `.codex/skills/<name>/SKILL.md` 文件——主 Agent 在匹配触发条件时**直接 `read` 该文件并严格按其规范执行**。
 
-    **路由门禁**：处理用户请求前先做一次意图分类：产品/需求、设计、开发、修 bug、审查、发布、动漫制作、平台提示词、审美审查、反馈记录。只要命中下面任一 Skill 或 Agent 触发条件，必须先读取对应 SKILL.md；需要内联 Agent 时还必须先读取对应 agents/<name>.md。不得因为“看起来只是问一句”就跳过路由。
+    **路由门禁**：处理用户请求前先做一次意图分类：产品/需求、设计、开发、修 bug、审查、发布、动漫制作、平台提示词、合理性审查、审美审查、反馈记录。只要命中下面任一 Skill 或 Agent 触发条件，必须先读取对应 SKILL.md；需要内联 Agent 时还必须先读取对应 agents/<name>.md。不得因为“看起来只是问一句”就跳过路由。
 
     匹配触发条件时，必须先 read 对应 SKILL.md 再输出响应。不要先回复再加载。
 
@@ -239,6 +243,14 @@
         **手动调用**：/anime-production-review
         执行方式：永远走 anime-quality-reviewer 内联角色流程
 
+    [anime-logic-continuity-review]
+        **自动调用**：
+        - 动漫短剧新篇章、分镜、关键图、视觉提示词、可灵/即梦提示词或成片预览完成后，在审美审查之前自动执行
+        - 用户指出“合理性”“逻辑”“前后接不上”“出场方式不合理”“空间不对”“动机不对”“水太小/门太小/距离不对”等故事或空间问题时
+        - 动漫制作流程中新增怪物、角色、能力、场景入口、机关、转场或关键动作时
+        **手动调用**：/anime-logic-continuity-review
+        执行方式：走 story-logic-reviewer 内联角色流程；合理性不过关时必须先回写制作产物，不得直接进入审美定稿
+
     [aesthetic-review-orchestrator]
         **自动调用**：
         - 用户要求审查美术、画面、审美、风格、漫画、动画、动漫镜头、AI 生成图质量
@@ -277,9 +289,10 @@
     | anime-screenwriter | .codex/agents/anime-screenwriter.md | anime-script-adapter | 小说改编 + 解说剧本 |
     | continuity-director | .codex/agents/continuity-director.md | anime-continuity-bible | 角色和世界观连续性 |
     | shot-visual-director | .codex/agents/shot-visual-director.md | anime-shot-designer, anime-visual-prompt-builder | 动态分镜 + 视觉提示词 |
-    | voice-post-director | .codex/agents/voice-post-director.md | anime-voice-subtitle-director, anime-assembly-exporter | 配音字幕 + 后期合成 |
-    | anime-quality-reviewer | .codex/agents/anime-quality-reviewer.md | anime-production-review | 动漫短剧制作审查 |
-    | aesthetic-director | .codex/agents/aesthetic-director.md | aesthetic-review-orchestrator | 总体审美审查 |
+| voice-post-director | .codex/agents/voice-post-director.md | anime-voice-subtitle-director, anime-assembly-exporter | 配音字幕 + 后期合成 |
+| anime-quality-reviewer | .codex/agents/anime-quality-reviewer.md | anime-production-review | 动漫短剧制作审查 |
+| story-logic-reviewer | .codex/agents/story-logic-reviewer.md | anime-logic-continuity-review | 故事合理性 + 空间连续性 + 镜头衔接审查 |
+| aesthetic-director | .codex/agents/aesthetic-director.md | aesthetic-review-orchestrator | 总体审美审查 |
     | art-image-critic | .codex/agents/art-image-critic.md | art-image-critique | 单张图像美术审查 |
     | comic-art-editor | .codex/agents/comic-art-editor.md | comic-page-critique | 漫画页与分格审查 |
     | animation-aesthetic-director | .codex/agents/animation-aesthetic-director.md | animation-shot-critique | 动画镜头审美审查 |
@@ -484,10 +497,22 @@
     [动漫短剧制作阶段]
         触发：用户说"把这段小说做成动漫短剧"、"网文转短视频"、"生成动漫分镜"、"生成 ComfyUI 提示词"、"生成可灵提示词"、"配音字幕"、"导出 mp4 计划"等
 
+        强制闭环：
+            1. 制作：完成文本摄取、剧本、连续性、动态分镜、视觉/平台提示词、配音字幕、合成计划中与请求相关的产物。
+            2. 合理性：主动调用 anime-logic-continuity-review，检查故事因果、空间尺度、角色动机、场景出入口、镜头衔接和平台误生成风险。发现 HIGH/MEDIUM 问题必须先回写制作产物。
+            3. 审美：主动调用 aesthetic-review-orchestrator；动画/镜头类必须追加 animation-shot-critique；图像类追加 art-image-critique；漫画类追加 comic-page-critique。发现问题必须回写到制作产物，不只写审查意见。
+            4. 落地：输出可直接执行的导入步骤、上传素材、主体绑定、主提示词、分镜文本、负面提示词、字幕/配音、保存命名、验收标准和失败即重做条件。
+
+        禁止行为：
+            - 不得等用户额外说“再审查一下”才审美复查。
+            - 不得跳过合理性审查直接进入审美；逻辑不成立时，画面越漂亮越危险。
+            - 不得只给文档路径或笼统建议代替落地操作。
+            - 不得用“已经考虑审美”糊弄，必须列出已执行的审美检查和已回写的修改点。
+
         完整流程：
             read .codex/agents/anime-producer.md + .codex/skills/anime-workflow-orchestrator/SKILL.md
                 ↓
-            按来源摄取 → 剧本改编 → 连续性设定 → 动态分镜 → 视觉提示词/可灵提示词 → 配音字幕 → 合成导出 → 制作审查执行
+            按来源摄取 → 剧本改编 → 连续性设定 → 动态分镜 → 视觉提示词/可灵提示词 → 配音字幕 → 合成导出 → 制作审查执行 → 合理性连续性审查 → 审美质量审查 → 落地导入交付
 
         分步流程：
             - 只整理文本/来源 → source-editor + anime-source-ingest
@@ -509,12 +534,24 @@
         完成后输出：
             "✅ **动漫短剧制作包已生成！**
 
-            包含：剧本、连续性设定、动态分镜、视觉提示词/可灵提示词、配音字幕、素材清单、合成导出计划、审查清单。
+            包含：剧本、连续性设定、动态分镜、视觉提示词/可灵提示词、配音字幕、素材清单、合成导出计划、制作审查、合理性审查、审美审查、落地导入步骤和失败重做标准。
 
             下一步：按制作包去生成素材；如需要落地成本地工具，调用 /product-spec-builder 创建产品需求。"
 
     [审美质量审查阶段]
         触发：用户说"审查美术"、"看看画面好不好"、"审美检查"、"漫画分格审查"、"动画镜头审查"、"这张 AI 图哪里不行"等
+
+        强制闭环：
+            1. 制作理解：先确认被审查对象在剧情、平台、受众和制作阶段里的用途。
+            2. 合理性前置：若审查对象涉及剧情、分镜、关键图、视频提示词或成片，先调用 anime-logic-continuity-review；合理性不过关时先修逻辑，不做审美定稿。
+            3. 审美审查：按审查对象调用对应 Skill/Agent，输出 HIGH/MEDIUM/LOW 问题。
+            4. 落地修复：必须给出可执行修改方案；涉及提示词、分镜、可灵/即梦导入或后期合成时，直接给可复制版本和失败重做标准。
+
+        禁止行为：
+            - 不得只给主观评价。
+            - 不得把故事逻辑、空间尺度、角色动机问题伪装成“审美偏好”。
+            - 不得只列问题不回到制作落地。
+            - 不得把“个人口味”当硬伤，也不得回避真正会毁片的问题。
 
         完整流程：
             read .codex/agents/aesthetic-director.md + .codex/skills/aesthetic-review-orchestrator/SKILL.md
@@ -588,6 +625,7 @@
     /anime-voice-subtitle-director - 配音风格、TTS 分段、字幕节奏设计
     /anime-assembly-exporter - 素材清单、时间线、ffmpeg 和 mp4 导出计划
     /anime-production-review - 动漫短剧制作包或成片预览质量审查
+    /anime-logic-continuity-review - 动漫短剧故事合理性、空间连续性、角色动机和镜头衔接审查
     /aesthetic-review-orchestrator - 美术、漫画、动画和整体视觉审美总审查
     /art-image-critique   - 单张美术图、角色图、场景图和 AI 生成图审查
     /comic-page-critique  - 漫画页、条漫、分格和阅读动线审查
