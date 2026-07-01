@@ -25,3 +25,4 @@
 - [可灵导入说明必须按界面顺序给可复制文本](kling-import-instructions-must-be-copy-ready.md) — 用户问导入可灵时，直接给按界面顺序排列的复制文本，不只给文件行号。
 - [即梦视频交付必须直接给可复制操作和提示词](jimeng-video-output-must-be-copy-ready.md) — 用户问即梦导入或生成视频时，必须按即梦界面顺序给操作和完整可复制提示词。
 - [Skill 和 Agent 路由必须先做意图门禁](skill-agent-routing-must-be-preflighted.md) — 每次处理请求前先分类，命中 Skill/Agent 时必须先读取对应文件，不能凭感觉直接答。
+- [调试和测试临时产物用完必须清理](debug-artifacts-must-be-cleaned-after-use.md) — Playwright、浏览器、ffmpeg、日志和截图等临时产物用完必须删除或明确归档，不能污染项目根目录。
